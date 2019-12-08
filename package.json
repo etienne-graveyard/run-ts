@@ -11,7 +11,8 @@
   "license": "MIT",
   "author": "Etienne Dldc",
   "files": [
-    "dist"
+    "dist",
+    "bin"
   ],
   "main": "dist/index.js",
   "module": "dist/run-ts.esm.js",

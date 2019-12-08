@@ -2,31 +2,30 @@
   "name": "ts-run",
   "version": "1.0.0-alpha.0",
   "description": "A tools to use Typescript files as npm scripts",
-  "bin": {
-    "ts-run": "./bin/ts-run.js"
-  },
-  "main": "dist/index.js",
-  "module": "dist/ts-run.esm.js",
-  "typings": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsdx build --target node",
-    "start": "tsdx watch --target node",
-    "try": "node ./dist/index.js",
-    "typecheck": "tsc --noEmit"
-  },
-  "repository": "git+https://github.com/etienne-dldc/ts-run.git",
   "keywords": [],
-  "author": "Etienne Dldc",
-  "license": "MIT",
+  "homepage": "https://github.com/etienne-dldc/ts-run#readme",
   "bugs": {
     "url": "https://github.com/etienne-dldc/ts-run/issues"
   },
-  "homepage": "https://github.com/etienne-dldc/ts-run#readme",
-  "devDependencies": {
-    "@types/fs-extra": "^8.0.1",
-    "np": "^5.2.1",
-    "tsdx": "^0.11.0",
-    "typescript": "^3.7.3"
+  "repository": "git+https://github.com/etienne-dldc/ts-run.git",
+  "license": "MIT",
+  "author": "Etienne Dldc",
+  "main": "dist/index.js",
+  "module": "dist/ts-run.esm.js",
+  "typings": "dist/index.d.ts",
+  "bin": {
+    "ts-run": "./bin/ts-run.js"
+  },
+  "scripts": {
+    "build": "tsdx build --target node",
+    "pub": "yarn build && np",
+    "start": "tsdx watch --target node",
+    "test": "tsdx test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
   },
   "prettier": {
     "printWidth": 100,
@@ -37,5 +36,14 @@
   "dependencies": {
     "fs-extra": "^8.1.0",
     "ts-node": "^8.5.4"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.1",
+    "@types/jest": "^24.0.22",
+    "husky": "^3.0.9",
+    "np": "^5.2.1",
+    "tsdx": "^0.11.0",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.3"
   }
 }

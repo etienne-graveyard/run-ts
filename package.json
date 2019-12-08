@@ -1,20 +1,20 @@
 {
-  "name": "ts-run",
+  "name": "run-ts",
   "version": "1.0.0-alpha.0",
   "description": "A tools to use Typescript files as npm scripts",
   "keywords": [],
-  "homepage": "https://github.com/etienne-dldc/ts-run#readme",
+  "homepage": "https://github.com/etienne-dldc/run-ts#readme",
   "bugs": {
-    "url": "https://github.com/etienne-dldc/ts-run/issues"
+    "url": "https://github.com/etienne-dldc/run-ts/issues"
   },
-  "repository": "git+https://github.com/etienne-dldc/ts-run.git",
+  "repository": "git+https://github.com/etienne-dldc/run-ts.git",
   "license": "MIT",
   "author": "Etienne Dldc",
   "main": "dist/index.js",
-  "module": "dist/ts-run.esm.js",
+  "module": "dist/run-ts.esm.js",
   "typings": "dist/index.d.ts",
   "bin": {
-    "ts-run": "./bin/ts-run.js"
+    "run-ts": "./bin/run-ts.js"
   },
   "scripts": {
     "build": "tsdx build --target node",

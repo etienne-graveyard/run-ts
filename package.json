@@ -1,6 +1,6 @@
 {
   "name": "run-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tools to use Typescript files as npm scripts",
   "keywords": [],
   "homepage": "https://github.com/etienne-dldc/run-ts#readme",

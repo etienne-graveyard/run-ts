@@ -1,4 +1,4 @@
-# ts-run
+# run-ts
 
 > A tools to use Typescript files as npm scripts
 
@@ -20,20 +20,20 @@
 ```json
 {
   "scripts": {
-    "setup": "ts-run some-argument",
-    "build": "ts-run"
+    "setup": "run-ts some-argument",
+    "build": "run-ts"
   }
 }
 ```
 
 ## How to
 
-### 1. Install `ts-run`
+### 1. Install `run-ts`
 
 ```bash
-npm install --save-dev ts-run
+npm install --save-dev run-ts
 # or
-yarn add --dev ts-run
+yarn add --dev run-ts
 ```
 
 ### 2. Create a `scripts` folder
@@ -68,7 +68,7 @@ console.log(foo);
 ```json
 {
   "scripts": {
-    "my-script": "ts-run"
+    "my-script": "run-ts"
   }
 }
 ```
@@ -77,7 +77,7 @@ That's it, now when you run `npm run my-script` the `scripts/my-script.ts` file 
 
 ## Using args
 
-If your file export a function as `default`, `ts-run` will execute this function with the arguments as forst parameter:
+If your file export a function as `default`, `run-ts` will execute this function with the arguments as forst parameter:
 
 ```ts
 // scripts/setup.ts
@@ -86,4 +86,4 @@ export default function setup(args: Array<string>) {
 }
 ```
 
-**Note**: You can also use `process.argv` but you have to strip the first two items (`node` and `ts-run`)
+**Note**: You can also use `process.argv` but you have to strip the first two items (`node` and `run-ts`)

@@ -77,7 +77,7 @@ That's it, now when you run `npm run my-script` the `scripts/my-script.ts` file 
 
 ## Using args
 
-If your file export a function as `default`, `run-ts` will execute this function with the arguments as forst parameter:
+If your file export a function as `default`, `run-ts` will execute this function with the arguments as first parameter:
 
 ```ts
 // scripts/setup.ts
